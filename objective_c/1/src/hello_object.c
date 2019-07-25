@@ -18,9 +18,9 @@ void set_message( char *str )
     message_length = strlen(str);
 }
 
-char *get_message( void )
+char *get_string_copy( char *str )
 {
-    char *ret = malloc(sizeof(char) * (strlen(message) + 1));
+    char *ret = malloc(sizeof(char) * (strlen(str) + 1));
 
     if(!ret){
         printf("Could not allocate get string\n");
@@ -30,6 +30,11 @@ char *get_message( void )
     strcpy(ret, message);
 
     return ret;
+}
+
+char *get_message( void )
+{
+    return get_string_copy(message);
 }
 
 int get_message_len( void )
