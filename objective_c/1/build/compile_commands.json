@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/build",
+  "command": "/usr/bin/cc  -I/home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/include  -g   -o CMakeFiles/foo.dir/src/main.c.o   -c /home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/src/main.c",
+  "file": "/home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/src/main.c"
+}
+]

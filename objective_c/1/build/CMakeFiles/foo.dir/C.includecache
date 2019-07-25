@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/main.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/src/main.c
+main.h
+/home/alxhoff/git/GitHub/FC-Bayern-Hackdays/C_code/src/main.h
+

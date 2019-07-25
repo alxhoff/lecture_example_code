@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/hello_object.h
+
+../include/main.h
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/alxhoff/git/GitHub/lecture_example_code/objective_c/1/src/hello_object.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+
+/home/alxhoff/git/GitHub/lecture_example_code/objective_c/1/src/main.c
+main.h
+/home/alxhoff/git/GitHub/lecture_example_code/objective_c/1/src/main.h
+hello_object.h
+/home/alxhoff/git/GitHub/lecture_example_code/objective_c/1/src/hello_object.h
+
