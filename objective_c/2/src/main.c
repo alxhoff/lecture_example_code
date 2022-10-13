@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 
     // We must use the printString function as the standard printf function does not
     // provide formatting for our String_t objects.
-
     printString(my_string);
 
     // We can use the getLength function to safely print the string's length
@@ -28,7 +27,6 @@ int main(int argc, char *argv[])
 
     // We could use the provided function "toCharArray" to get a char* copy of the string
     // that can be printed using the formatting %s
-
     printf("In a char array: %s\n", toCharArray(my_string));
 
     // If we wanted a second string we could use the two other available functions to first
@@ -39,19 +37,19 @@ int main(int argc, char *argv[])
     String_t my_second_string = newEmptyString();
 
     if (my_second_string == NULL)
-        return 1;
+        return 2;
 
     // In this case setString returned a non-zero value on error, thus we should check if it's
     // non-zero
     if (setString(my_second_string, "Setting my second string"))
-        return 2;
+        return 3;
 
     printString(my_second_string);
 
     // Now let's combine the two strings, the documentation tells us the result is placed into
     // the handle of the first string and the function also returns zero on success
     if (concatenateStrings(my_string, my_second_string))
-        return 3;
+        return 4;
 
     printString(my_string);
 
@@ -59,8 +57,8 @@ int main(int argc, char *argv[])
     // functions are protecting us and our bad programming by performing checks, again
     // having a well written and restrictive API has saved the bad engineer from being
     // extra bad
-
     freeString(&my_second_string);
-
     printString(my_second_string);
+
+    return 0;
 }
