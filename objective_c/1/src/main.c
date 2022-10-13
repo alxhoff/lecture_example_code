@@ -1,4 +1,7 @@
-#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
 #include "hello_object.h"
 
 int main(int argc, char* argv[])
