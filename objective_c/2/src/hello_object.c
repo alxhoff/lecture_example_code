@@ -20,6 +20,8 @@ int setString(char *str)
 
     my_string.str = new_str;
     my_string.len = strlen(new_str);
+
+    return 0;
 }
 
 char *getString()
